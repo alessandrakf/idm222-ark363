@@ -1,0 +1,118 @@
+@font-face {
+    font-family: 'Amiri';
+    src: url('fonts/Amiri/Amiri-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/Roboto_Condensed/RobotoCondensed-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mate_SC';
+    src: url('fonts/Mate_SC/MateSC-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Playfair';
+    src: url('fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f9f9f9;
+    color: #171717;
+    font-family: 'Amiri', 'Times New Roman', Times, serif;
+}
+
+h1 {
+    font-family: 'Amiri';
+    font-size: 40px;
+    line-height: 44px;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Amiri';
+    font-size: 2rem; 
+    line-height: 40px;
+}
+
+h3 {
+    font-family: 'Roboto';
+    font-size: 25px;
+}
+
+h4 {
+    font-family: 'Mate_SC';
+    font-size: 20px;
+    line-height: 15px;
+}
+
+p {
+    font-family: 'Amiri';
+    font-size: 17px;
+    line-height: 1.7rem;
+}
+
+a { 
+    text-decoration: none;
+    color: #F9A78F;
+ }
+
+ header {
+     text-align: center;
+ }
+
+ .topnav a {
+    color: #FDC383;
+ }
+
+ .dropbtn {
+     background-color: transparent;
+     color: #FDC383;
+     font-family: 'Roboto';
+     padding: 16px;
+     font-size: 25px;
+     border: none;
+ }
+
+ .dropdown {
+     position: relative;
+     display: inline-block;
+ }
+
+ .dropdown-content {
+     display: none;
+     position: absolute;
+     background-color: #f1f1f1;
+     min-width: 160px;
+     box-shadow: 0px 6px 16px 0px rgba(0,0,0,0.2);
+     z-index: 1;
+ }
+
+ .dropdown-content a {
+     color: black;
+     padding: 12px 16px;
+     text-decoration: none;
+     display: bock;
+ }
+
+ .dropdown-content a:hover {
+     color: #FDC383;
+ }
+
+ .dropdown:hover .dropdown-content {
+     display: block;
+ }
