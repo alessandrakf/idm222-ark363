@@ -77,6 +77,7 @@ a {
 
  header {
      text-align: center;
+     padding-top: 1rem;
  }
 
  .topnav a {
@@ -139,6 +140,29 @@ a {
      max-width: 300px;
  }
 
+ .grid {
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr 1fr;
+     grid-template-areas: "post post post sidebar";
+ }
+
+.posts {
+    grid-area: post;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section {
+    width: 31%;
+    display: flex;
+    flex-direction: column;
+    padding: .5rem;
+}
+
+a.section h2 {
+    margin-top: auto;
+}
+
  .aboutme p {
      max-width: 300px;
  }
@@ -150,7 +174,9 @@ a {
     text-decoration: none;
     border-radius: 25px;
     justify-content: center;
-    max-width: 300px;
+    max-width: 150px;
+    margin-top: auto;
+    text-align: center;
 }
 
 a.readmore:hover {
