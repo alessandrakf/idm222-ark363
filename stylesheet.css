@@ -84,6 +84,7 @@ a {
     color: #FDC383;
     padding-right: 1rem;
     padding-left: 1rem;
+    cursor: pointer;
  }
 
 .topnav a:hover {
@@ -103,6 +104,7 @@ a {
      padding-right: 1rem;
      padding-left: 1rem;
      border: none;
+     cursor: pointer;
  }
 
  .dropdown {
@@ -185,4 +187,17 @@ a.readmore:hover {
 
 h2 a:hover {
     color: #FFD9CD;
+}
+
+.about-me img {
+    float: left;
+}
+
+.about-me p {
+    clear: left;
+    overflow: auto;
+}
+
+.img-resize {
+    max-width: 300px;
 }
