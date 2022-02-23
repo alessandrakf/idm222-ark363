@@ -207,6 +207,7 @@ a.section h2 {
     max-width: 140px;
     margin-top: auto;
     text-align: center;
+    font-family: 'Roboto';
 }
 
 a.readmore:hover {
@@ -243,18 +244,21 @@ a.readmore:hover {
 
 /* AMSTERDAM PAGE */
 
-.amsterdam-main-img {
+.post-main-img {
     float: left;
 }
 
-.amsterdam-intro {
+.post-intro {
     padding-bottom: 2rem;
 }
 
-#amsterdam-text {
+.amsterdam-text {
     padding: 4rem 2rem 6rem 2rem;
 }
 
-#amsterdam-heading {
+.post-heading {
     padding-bottom: 2rem;
 }
+
+/* BARCELONA PAGE */
+
