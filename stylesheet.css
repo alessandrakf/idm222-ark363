@@ -26,14 +26,6 @@
     font-style: normal;
 }
 
-.wrapper {
-    margin: 1rem 6rem 0rem 6rem;
-}
-
-.wrapper-blogposts {
-    margin: 1rem 22rem 0rem 22rem;
-}
-
 * {
     box-sizing: border-box;
 }
@@ -100,6 +92,46 @@ a {
      padding-top: 1rem;
  }
 
+/* MEDIA QUERIES FOR HOME PAGE */
+
+@media (min-width: 1200px) {
+.wrapper {
+    margin: 1rem 6rem 0rem 6rem;
+    }
+} 
+
+@media (min-width: 768) {
+    .wrapper {
+        margin: 1rem 2rem 0rem 2rem
+    }
+}
+
+/* MEDIA QUERIES FOR OTHER PAGES */
+@media (min-width: 1500px) {
+.wrapper-blogposts {
+    margin: 1rem 22rem 0rem 22rem;
+    }
+}
+
+@media (min-width: 1300px) {
+    .wrapper-blogposts {
+        margin: 1rem 18rem 0rem 18rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .wrapper-blogposts {
+        margin: 1rem 14rem 0rem 14rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .wrapper-blogposts {
+        margin: 1rem 14rem 0rem 14rem;
+    }
+}
+
+
 /* TOP NAV */
 
  .topnav a {
@@ -117,6 +149,7 @@ a {
      display: flex;
      flex-direction: row;
      justify-content: center;
+     padding-bottom: 2rem;
  }
 
  .topnav-abroad {
@@ -186,13 +219,13 @@ a {
     grid-area: post;
     display: flex;
     flex-wrap: wrap;
+    gap: 1.5rem 1.5rem;
 }
 
 .section {
     width: 31%;
     display: flex;
     flex-direction: column;
-    padding: 1.5rem;
 }
 
 a.section h2 {
@@ -208,7 +241,7 @@ a.section h2 {
     text-decoration: none;
     border-radius: 25px;
     justify-content: center;
-    max-width: 140px;
+    max-width: 120px;
     margin-top: auto;
     text-align: center;
     font-family: 'Roboto';
@@ -236,7 +269,7 @@ a.readmore:hover {
     text-align: center;
 }
 
-/* ABOUT ME */
+/* ABOUT ME PAGE */
 
 .aboutme p {
     max-width: 300px;
@@ -248,6 +281,79 @@ a.readmore:hover {
 
 #about-me-text {
     padding: 2rem;
+}
+
+/* ABOUT ME SECTION ON HOME PAGE */
+
+#about-me-title {
+    text-align: center;
+    padding-top: .5rem;
+}
+
+.sidebar h3 {
+    color: white;
+    letter-spacing: .2rem;
+    text-align: center;
+}
+
+.sidebar p {
+    padding-bottom: 1rem;
+}
+
+.sidebar img {
+    margin: 0 auto;
+    display: block;
+}
+
+#about-me-title a {
+    color: #FFD9CD;
+}
+
+#about-me-title a:hover {
+    color: white;
+}
+
+.about-me-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transform: scale(1.1);
+    width: 100%
+}
+
+.additional-color {
+    background-color: #E39F76;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    transform: scale(1.1);
+    width: 100%
+}
+
+.sidebar {
+    position: relative;
+    max-height: 900px;
+    margin-left: 1rem;
+}
+
+a.readmore-aboutme {
+    background-color: #F3C9B1;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 25px;
+    justify-content: center;
+    max-width: 140px;
+    margin-top: auto;
+    text-align: center;
+    font-family: 'Roboto';
+}
+
+a.readmore-aboutme:hover {
+    background-color: #FDC383;
 }
 
 /* BLOG POSTS */
@@ -282,4 +388,33 @@ a.readmore:hover {
 
 #barcelona-start {
     padding-top: 2rem;
+}
+
+/* GRID MEDIA QUERIES */
+
+@media screen and (max-width: 1100px) {
+    .grid {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: "post post sidebar";
+    }
+   .section {
+       width: 46.5%;
+   }
+
+   .sidebar {
+       width: 100%;
+   }
+
+}
+
+@media screen and (max-width: 700px) {
+    .grid {
+        display: block;
+    }
+   .section {
+       width: 100%;
+   }
+   .sidebar {
+       width: 100%
+   }
 }
