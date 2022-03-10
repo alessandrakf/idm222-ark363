@@ -90,8 +90,6 @@ a {
  header {
      text-align: center;
      padding-top: 1rem;
-     display: flex;
-     justify-content: space-between;
  }
 
 /* MEDIA QUERIES FOR HOME PAGE */
@@ -549,14 +547,7 @@ body {
 }
 
 /* TOP NAV MEDIA QUERIES */
-@media screen and (min-width: 700px) {
 
-    /* Hide our mobile nav, show our desktop nav */
-
-    .mobile-nav {
-        display: none;
-    }
-}
 
 @media screen and (max-width: 700px) {
     .topnav {
@@ -572,8 +563,21 @@ body {
         display: flex;
         flex-direction: column;
     }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+    }
 }
 
+@media screen and (min-width: 700px) {
+
+    /* Hide our mobile nav, show our desktop nav */
+
+    .mobile-nav {
+        display: none;
+    }
+}
 /* GRID MEDIA QUERIES */
 
 @media screen and (max-width: 1100px) {
