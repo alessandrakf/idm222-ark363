@@ -125,11 +125,6 @@ a {
     }
 }
 
-@media (min-width: 1200px) {
-    .wrapper-blogposts {
-        margin: 1rem 14rem 0rem 14rem;
-    }
-}
 
 /* MOBILE NAV */
 
@@ -301,6 +296,40 @@ a.section h2 {
     margin-top: auto;
 }
 
+/* LONDON PAGE GRID */
+
+.grid-london p {
+    max-width: 300px;
+}
+
+.grid-london {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "post post";
+}
+
+.grid-london img {
+   margin-top: auto;
+}
+
+.posts-london {
+   grid-area: post;
+   display: flex;
+   flex-wrap: wrap;
+   gap: 1.5rem 1.5rem;
+}
+
+.section-london {
+   width: 31%;
+   display: flex;
+   flex-direction: column;
+}
+
+a.section-london h2 {
+   margin-top: auto;
+}
+
+
 /* READ MORE BUTTON */
 
  a.readmore {
@@ -350,11 +379,14 @@ img {
 }
 
 .about-me img {
-    float: left;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 
 #about-me-text {
-    padding: 2rem;
+    padding: 1rem;
 }
 
 /* ABOUT ME SECTION ON HOME PAGE */
@@ -372,6 +404,7 @@ img {
 
 .sidebar p {
     padding-bottom: 1rem;
+    margin: 0rem 2rem 1rem 2rem;
 }
 
 .sidebar img {
@@ -421,9 +454,9 @@ a.readmore-aboutme {
     border-radius: 25px;
     justify-content: center;
     max-width: 140px;
-    margin-top: auto;
     text-align: center;
     font-family: 'Roboto';
+    margin: 0rem 2rem 0rem 2rem;
 }
 
 a.readmore-aboutme:hover {
@@ -508,8 +541,8 @@ body {
 
 /* BLOG POSTS */
 
-.post-main-img {
-    float: left;
+.wrapper-blogposts {
+    padding: 0rem 1rem;
 }
 
 .post-intro {
@@ -520,14 +553,17 @@ body {
     padding-bottom: 2rem;
 }
 
+.post-main-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
 /* AMSTERDAM PAGE */
 
 #amsterdam-text {
-    padding: 4rem 2rem 6rem 2rem;
-}
-
-#amsterdam-brunch {
-    padding-top: 2rem;
+    padding: 1rem;
 }
 
 /* BARCELONA PAGE */
@@ -568,6 +604,10 @@ body {
         display: flex;
         justify-content: space-between;
     }
+
+    .wrapper {
+        margin: 1rem 2.5rem 0rem 2.5rem;
+    }
 }
 
 @media screen and (min-width: 700px) {
@@ -576,6 +616,43 @@ body {
 
     .mobile-nav {
         display: none;
+    }
+
+    .post-main-img {
+        float: left;
+        max-width: 300px;
+    }
+
+    #amsterdam-text {
+        padding-bottom: 4rem 2rem 8rem 2rem;
+    }
+    
+    #amsterdam-brunch {
+        padding-top: 8rem;
+    }
+
+    .aboutme p {
+        max-width: 300px;
+    }
+    
+    .about-me img {
+        float: left;
+    }
+    
+    #about-me-text {
+        padding: 2rem;
+    }
+
+    .aboutme p {
+        max-width: 300px;
+    }
+    
+    .about-me img {
+        float: left;
+    }
+    
+    #about-me-text {
+        padding: 2rem;
     }
 }
 /* GRID MEDIA QUERIES */
@@ -592,7 +669,6 @@ body {
    .sidebar {
        width: 100%;
    }
-
 }
 
 @media screen and (max-width: 700px) {

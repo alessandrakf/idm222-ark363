@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="normalize.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>London</title>
+</head>
+
+<body>
+    <div class="wrapper-blogposts">
+        <header>
+            <a href="index.html">
+                <picture class="logo">
+                    <source media="(min-width: 1200px)" srcset="images/logo-desktop.png" />
+                    <source media="(min-width: 0px)" srcset="images/logo-small.png" />
+                    <img src="images/logo-desktop.png" alt="website logo reading 'CityGoodEats'">
+                </picture>
+            </a>    
+            <div class="nav">
+            <!-- Mobile Nav-->
+            <div class="mobile-nav nav__mobile-nav">
+                <!-- Open Button -->
+                <div id="mobile-nav-open-button" class="mobile-nav__button">
+                    <svg fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                </div>
+    
+                <nav id="mobile-nav" class="mobile-nav__nav">
+                    <!-- Close Button -->
+                    <div id="mobile-nav-close-button" class="mobile-nav__close-button">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+                    </div>
+                    <ul class="mobile-nav__nav-list">
+                        <li class="nav__nav-list-item">
+                            <a href="index.html" class="nav__nav-list-link">Home</a>
+                        </li>
+    
+                        <li class="nav__nav-list-item">
+                            <a href="about-me.html" class="nav__nav-list-link">About Me</a>
+                        </li>
+    
+                        <li class="nav__nav-list-item">
+                            <a href="amsterdam.html" class="nav__nav-list-link">Amsterdam</a>
+                        </li>
+    
+                        <li>   
+                            <a href="barcelona.html" class="nav__nav-list-link">Barcelona</a>
+                        </li> 
+    
+                        <li>
+                            <a href="paris.html" class="nav__nav-list-link">Paris</a>
+                        </li>
+    
+                        <li>
+                            <a href="london.html" class="nav__nav-list-link">London</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+    
+            <!-- Desktop Nav -->
+       
+    
+        <nav class="topnav">
+            <h3><a href="about-me.html" target="_blank">ABOUT ME</a></h3>
+            <div class="dropdown">
+                <div class="topnav-abroad">
+                    <h3>ABROAD</h3>
+                </div>
+                <div class="dropdown-content">
+                    <a href="amsterdam.html" target="_blank">Amsterdam</a>
+                    <a href="barcelona.html" target="_blank">Barcelona</a>
+                    <a href="london.html" target="_blank">London</a>
+                    <a href="paris.html" target="_blank">Paris</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    
+    
+        <script>
+            // Mobile menu logic
+            const mobileNav = document.getElementById('mobile-nav');
+            const openButton = document.getElementById('mobile-nav-open-button');
+            const closeButton = document.getElementById('mobile-nav-close-button');
+    
+            openButton.addEventListener("click", () => {
+                mobileNav.classList.remove('mobile-nav__nav--closed');
+                mobileNav.classList.add('mobile-nav__nav--open');
+            });
+    
+            // When we close it do the opposite
+            closeButton.addEventListener("click", () => {
+                mobileNav.classList.remove('mobile-nav__nav--open');
+                mobileNav.classList.add('mobile-nav__nav--closed');
+            });
+    
+        </script>
+        </header>
+    
+
+<main>
+<h1>Explore London Posts</h1>
+<p>While studying abroad in London from January to March in 2020, I explored so many amazing food places. Check out any of my London blog posts to see my faves. More London-specific blog posts to come!</p>
+
+<div class="grid-london">
+    <div class="posts-london">
+        <!-- LONDON CAFÉS BLOG POST -->
+        <section class="section-london london-cafes">
+            <h2><a href="london-cafés.html" target="_blank">Exploring 7 of London's Delicious Cafés</a></h2>
+            <img src="images/london-cafes/london-cafes-main-large.jpeg"
+                alt="a croissant and espresso pictured on a black table with a pair of Ray Ban sunglasses">
+            <p>I’ve posted my picks for London sweets and brunches, but I haven’t talked about my love for
+                London cafés! …</p>
+            <a href="london-cafés.html" class="readmore">READ MORE</a>
+        </section>
+
+        <!-- LONDON MARKETS BLOG POST -->
+        <section class="section-london london-markets">
+            <h2><a href="london-markets.html" target="_blank">6 London Street Markets You Must Visit</a>
+            </h2>
+            <img src="images/london-markets/london-markets-main-small.JPG"
+                alt="one of the brick walls in Borough Market in London which is painted white and reads 'Established 1756 Borough Market 'Variety & Quality'">
+            <p>While studying abroad in London, I was obsessed with the abundance of street food and markets
+                that are in ...</p>
+            <a href="london-markets.html" class="readmore">READ MORE</a>
+        </section>
+
+        <!-- LONDON DESSERTS BLOG POST -->
+        <section class="section-london london-desserts">
+            <h2><a href="london-desserts.html" target="_blank">10 of the Best Dessert Spots in London</a>
+            </h2>
+            <img src="images/london-desserts/london-desserts-main-small.JPG"
+                alt="a chocolate cookie with vanilla ice cream on top and chocolate drizzle on top, topped with a chocolate square that reads 'Chin Chin Ice Cream">
+            <p>During my time studying abroad in London I made it a priority to seek out all of the best
+                dessert spots in London ...</p>
+            <a href="london-dessert.html" class="readmore">READ MORE</a>
+        </section>
+
+        <!-- LONDON BRUNCH BLOG POST -->
+        <section class="section-london london-brunch">
+            <h2><a href="london-brunch.html" target="_blank">My Guide to the Best Brunch Spots in London</a>
+            </h2>
+            <img src="images/london-brunch/london-brunch-main-small.JPG"
+                alt="overhead picture of a table filled with different brunch foods on colorful plates from Farm Girl in London">
+            <p>If you’ve read any of my other blog posts, you know I go crazy over brunch! When on vacations
+                and weekends it is …</p>
+            <a href="london-brunch.html" class="readmore">READ MORE</a>
+        </section>
+    </div>
+</div>
+
+</main>
+
+</div>
+
+<footer>
+    <!-- Footer main -->
+    <section class="ft-main">
+        <div class="ft-main-item">
+            <h2 class="ft-title">Navigate</h2>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about-me.html">About Me</a></li>
+            </ul>
+        </div>
+        <div class="ft-main-item">    
+            <h2 class="ft-title">Abroad Blog Posts</h2>
+            <ul>
+                <li><a href="amsterdam.html">Amsterdam</a></li>
+                <li><a href="barcelona.html">Barcelona</a></li>
+                <li><a href="paris.html">Paris</a></li>
+            </ul>
+        </div>
+        <div class="ft-main-item">    
+            <h2 class="ft-title"><a href="london.html">London</a></h2>
+            <ul>
+                <li><a href="london-brunch.html">Best Brunch Spots</a></li>
+                <li><a href="london-cafés.html">London's Cafés</a></li>
+                <li><a href="london-dessert.html">Best Dessert Spots</a></li>
+                <li><a href="london-markets.html">Street Food Markets</a></li>
+            </ul>
+        </div>
+    
+
+        <!--Footer Connect-->
+        <div class="container"></div>
+        <div class="ft-main-item">
+            <h2 class="ft-title">Connect</h2>
+            <ul>
+                <li>Follow me on Instagram: <a href="https://www.instagram.com/citygoodeats/">@citygoodeats</a></li>
+                <li>Email: citygoodeats@gmail.com</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Footer legal -->
+    <section class="ft-legal">
+        <ul class="ft-legal-list">
+            <li>&copy; Copyright 2022 </li>
+        </ul>
+    </section>
+    </footer>
+
+</body>
+
+</html>
