@@ -359,6 +359,12 @@ a.readmore:hover {
 
 .img-resize {
     max-width: 300px;
+    margin: auto;
+    width: 100%;
+}
+
+.img-resize-hor {
+    max-width: 400px;
 }
 
 .images {
@@ -608,6 +614,10 @@ body {
     .wrapper {
         margin: 1rem 2.5rem 0rem 2.5rem;
     }
+
+    .about-me-image {
+        max-width: 275px;
+    }
 }
 
 @media screen and (min-width: 700px) {
@@ -654,6 +664,7 @@ body {
     #about-me-text {
         padding: 2rem;
     }
+
 }
 /* GRID MEDIA QUERIES */
 
@@ -694,6 +705,7 @@ body {
     }
     .sidebar {
         margin-left: 0rem;
+        margin-top: 6rem;
     }
 
     .additional-color {
