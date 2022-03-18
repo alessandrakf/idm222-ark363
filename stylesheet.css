@@ -395,6 +395,10 @@ img {
     padding: 1rem;
 }
 
+.about-me {
+    padding-bottom: 2rem;
+}
+
 /* ABOUT ME SECTION ON HOME PAGE */
 
 #about-me-title {
@@ -663,6 +667,10 @@ body {
     
     #about-me-text {
         padding: 2rem;
+    }
+
+    .about-me {
+        padding-bottom: 6rem;
     }
 
 }
